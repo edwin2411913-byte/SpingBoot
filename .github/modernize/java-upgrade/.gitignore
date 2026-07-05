@@ -2,14 +2,25 @@
 target/
 *.jar
 *.war
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
 
 # IDE
 .idea/
 .vscode/
 *.iml
-.eclipse
+*.classpath
+.project
 .settings/
+bin/
 
 # Sistema
 .DS_Store
 *.log
+*.class
+
+# Temporales
+*.tmp
+*.swp
