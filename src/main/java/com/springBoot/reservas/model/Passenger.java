@@ -1,35 +1,29 @@
-package com.springBoot.reservas.dto;
+package com.springBoot.reservas.model;
 
-
-import javax.xml.crypto.Data;
 import java.time.LocalDate;
+import java.util.Date;
 
-public class PassengerDTO {
+public class Passenger {
+    private Long id;
     private String firstName;
     private String lastName;
     private String documentNumber;
-    private LocalDate birthday;
     private String documentType;
+    private LocalDate birthday;
 
-
-    public PassengerDTO(String firstName, String lastName, String documentNumber, LocalDate birthday, String documentType) {
+    public Passenger(Long id, String firstName, String documentNumber, String lastName, LocalDate birthday, String documentType) {
+        this.id = id;
         this.firstName = firstName;
-        this.lastName = lastName;
         this.documentNumber = documentNumber;
+        this.lastName = lastName;
         this.birthday = birthday;
         this.documentType = documentType;
     }
+    public Passenger() {}
 
-    public String getDocumentType() {
-        return documentType;
-    }
+    public Long getId() {return id;}
 
-    public void setDocumentType(String documentType) {
-        this.documentType = documentType;
-    }
-
-    public PassengerDTO() {
-    }
+    public void setId(Long id) {this.id = id;}
 
     public String getFirstName() {
         return firstName;
@@ -63,6 +57,7 @@ public class PassengerDTO {
         this.birthday = birthday;
     }
 
+    public String getDocumentType() {return documentType;}
 
-
+    public void setDocumentType(String documentType) {this.documentType = documentType;}
 }
