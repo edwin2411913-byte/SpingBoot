@@ -6,8 +6,9 @@ pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
 pom.xml.next
+release.properties
 
-# IDE
+# IDE (IntelliJ, VSCode, Eclipse)
 .idea/
 .vscode/
 *.iml
@@ -15,12 +16,27 @@ pom.xml.next
 .project
 .settings/
 bin/
+.eclipse
+*.swp
+*.swo
+
+# Spring Boot
+*.log
+application-*.properties
+application-*.yml
 
 # Sistema
 .DS_Store
-*.log
-*.class
-
-# Temporales
+Thumbs.db
 *.tmp
 *.swp
+
+# Temporales
+node_modules/
+dist/
+build/
+
+# Credenciales (IMPORTANTE)
+.env
+.env.local
+application-secret.properties
