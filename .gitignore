@@ -22,8 +22,10 @@ bin/
 
 # Spring Boot
 *.log
-application-*.properties
-application-*.yml
+application.properties
+   application.yml
+   application-*.properties
+   application-*.yml
 
 # Sistema
 .DS_Store
