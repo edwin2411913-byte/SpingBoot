@@ -62,7 +62,7 @@ public class ReservationRespository {
         return Optional.ofNullable(reservation);
     }
 
-    public Reservation save(Reservation reservation) {
+    public Reservation save (Reservation reservation) {
         reservation.setId((long) reservations.size() + 1);
         reservations.add(reservation);
         return reservation;
