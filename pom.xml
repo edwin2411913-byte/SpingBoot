@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.springBoot</groupId>
 	<artifactId>reservas</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>Reservas API</name>
 	<description>API de reservas con Spring Boot</description>
 
@@ -55,6 +55,8 @@
 
 	<!-- BUILD -->
 	<build>
+		<!-- Nombre del Jar o War -->
+		<finalName>reservas-api-${project.version}</finalName>
 		<plugins>
 			<!-- Spring Boot Maven Plugin -->
 			<plugin>
