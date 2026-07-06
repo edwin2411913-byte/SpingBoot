@@ -36,6 +36,13 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Spring Boot Actuator -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+
 		<!-- MapStruct (para convertir DTO ↔ Entidad) -->
 		<dependency>
 			<groupId>org.mapstruct</groupId>
@@ -80,5 +87,11 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 	</build>
 </project>
