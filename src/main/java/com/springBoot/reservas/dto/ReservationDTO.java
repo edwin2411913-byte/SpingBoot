@@ -1,13 +1,19 @@
 package com.springBoot.reservas.dto;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+
 import java.util.List;
 
 public class ReservationDTO {
     private Long id;
     private List<PassengerDTO> passengers;
 
+    @Valid
     private ItineraryDTO itinerary;
 
+    @Valid
+    @NotEmpty(message = "You need at least one passenger")
     public List<PassengerDTO> getPassengers() {
         return passengers;
     }

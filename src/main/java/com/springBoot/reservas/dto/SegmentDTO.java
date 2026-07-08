@@ -1,13 +1,23 @@
 package com.springBoot.reservas.dto;
 
+
+import com.springBoot.reservas.validation.CityFormatConstraint;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 public class SegmentDTO {
+
+    @CityFormatConstraint
     private String origin;
+
+    @CityFormatConstraint
     private String destination;
     private String departure;
     private String arrival;
     private String carrier;
 
     public SegmentDTO(String origin, String destination, String departure, String arrival, String carrier) {
+
         this.origin = origin;
         this.destination = destination;
         this.departure = departure;

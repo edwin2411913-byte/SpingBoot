@@ -1,14 +1,24 @@
 package com.springBoot.reservas.dto;
 
 
-import javax.xml.crypto.Data;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Past;
+
 import java.time.LocalDate;
 
 public class PassengerDTO {
+
+    @NotBlank(message = "FirstName is mandatory")
     private String firstName;
+
+    @NotBlank(message = "LastName is mandatory")
     private String lastName;
+
     private String documentNumber;
+
+    @Past(message = "Birthday need to be a date in the past")
     private LocalDate birthday;
+
     private String documentType;
 
 

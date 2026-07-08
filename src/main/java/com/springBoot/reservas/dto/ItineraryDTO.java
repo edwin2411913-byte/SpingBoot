@@ -1,12 +1,14 @@
 package com.springBoot.reservas.dto;
 
+import jakarta.validation.Valid;
+
 import java.util.List;
 
 public class ItineraryDTO {
     private List<SegmentDTO> segment;
 
     private PriceDTO price;
-
+    @Valid
     public List<SegmentDTO> getSegment() {
         return segment;
     }
